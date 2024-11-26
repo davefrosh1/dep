@@ -1,0 +1,51 @@
+
+name: cvcourse
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Core Python environment
+  - python=3.8
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - jupyterlab
+
+  # Computer Vision Libraries
+  - opencv=4.5
+  - pillow
+  - scikit-image
+  - pyqt
+
+  # Deep Learning Frameworks
+  - tensorflow=2.10
+  - keras
+  - pytorch
+  - torchvision
+  - torchaudio
+  - cudatoolkit=11.3  # Adjust this to match your GPU's CUDA version
+
+  # Tools for Object Detection and Segmentation
+  - albumentations  # For image augmentation
+  - pycocotools  # For COCO dataset handling
+  - onnx
+  - onnxruntime
+
+  # Miscellaneous Utilities
+  - tqdm  # Progress bars
+  - seaborn
+  - h5py
+
+  # GANs and Neural Network Training Tools
+  - wandb  # Optional, for experiment tracking
+  - tensorboard
+  - imageio  # For handling image sequences
+
+  # Additional Tools for Custom Models (SSD/YOLO)
+  - pip:
+      - pycuda
+      - darknetpy  # For YOLO
+      - labelme  # Annotation tool for segmentation tasks
+      - opencv-python-headless  # If GUI components aren't needed
+      - ultralytics  # YOLOv5 package
