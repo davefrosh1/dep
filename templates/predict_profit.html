@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Model Deployment</title>
+</head>
+<body>
+    <h1>Predict Profit</h1>
+    <form action="/predict_data" method="POST">
+        <label for="rd_spend">R&D Spend:</label><br>
+        <input type="text" id="rd_spend" name="R&D_Spend"><br><br>
+
+        <label for="administration">Administration:</label><br>
+        <input type="text" id="administration" name="Administration"><br><br>
+
+        <label for="marketing_spend">Marketing_Spend:</label><br>
+        <input type="text" id="marketing_spend" name="Marketing_Spend"><br><br>
+
+        <label for="state_california">State_California:</label><br>
+        <input type="text" id="state_california" name="State_California"><br><br>
+
+        <label for="state_new_york">State_New York:</label><br>
+        <input type="text" id="state_new_york" name="State_New_York"><br><br>
+
+        <label for="state_florida">State_Florida:</label><br>
+        <input type="text" id="state_florida" name="State_Florida"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <h2>Predicted Profit is {{results}} </h2>
+</body>
+</html>
